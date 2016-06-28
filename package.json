@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Implementation of firebase cloud messaging based on promises",
   "main": "index.js",
+  "repository": {
+    "url": "https://github.com/olsynt/promise-fcm.git"
+  },
   "scripts": {
     "test": "node test.js"
   },
