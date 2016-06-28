@@ -2,7 +2,7 @@ promise-fcm
 ===================
 An implementation of firebase cloud messaging using promises.
 
-Documantation
+Documentation
 -------------
 
 **Installation**
