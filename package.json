@@ -1,0 +1,14 @@
+{
+  "name": "promise-fcm",
+  "version": "1.0.0",
+  "description": "Implementation of firebase cloud messaging based on promises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fcm"
+  ],
+  "author": "olsynt",
+  "license": "ISC"
+}
