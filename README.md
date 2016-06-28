@@ -5,6 +5,10 @@ An implementation of firebase cloud messaging using promises.
 Documantation
 -------------
 
+**Installation**
+`npm install promise-fcm --save`
+
+
 **Usage example**
 ```javascript
 let sender = new FCM("serverKey");
