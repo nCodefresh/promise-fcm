@@ -1,6 +1,6 @@
 {
   "name": "promise-fcm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Implementation of firebase cloud messaging based on promises",
   "main": "index.js",
   "repository": {
