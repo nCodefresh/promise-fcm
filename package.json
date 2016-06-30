@@ -15,6 +15,7 @@
   "author": "olsynt",
   "license": "ISC",
   "dependencies": {
+    "lodash": "^4.13.1",
     "request-promise": "^3.0.0"
   },
   "devDependencies": {}
