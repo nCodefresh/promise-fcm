@@ -1,6 +1,6 @@
 {
   "name": "promise-fcm",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Implementation of firebase cloud messaging based on promises",
   "main": "index.js",
   "repository": {
@@ -10,7 +10,17 @@
     "test": "node test.js"
   },
   "keywords": [
-    "fcm"
+    "fcm",
+    "gcm",
+    "google",
+    "push",
+    "notification",
+    "push notifications",
+    "android",
+    "node-fcm",
+    "firebase",
+    "firebase cloud messaging",
+    "ios"
   ],
   "author": "olsynt",
   "license": "ISC",
