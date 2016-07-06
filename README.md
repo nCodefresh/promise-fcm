@@ -14,18 +14,18 @@ You can more easily chain functions and call `now` to send the message.
 Example :
 
 ```javascript
-let sender = new FCM("serverKey");
+let sender = new FCM('serverKey');
 let message = {
 	key: value
 };
-let registrationDeviceId = "registrationDeviceId"
+let registrationDeviceId = 'registrationDeviceId'
 sender
 	.sendTo(registrationDeviceId)
 	.withMessage(message)
 	.now()
 	.then(function (response) {
-	  console.log("Request succeeded with status ", response.statusCode);
-	  console.log("The response is : " , response.body);
+	  console.log('Request succeeded with status ', response.statusCode);
+	  console.log('The response is : ' , response.body);
 	})
 	.catch(function (err) {
 	 console.log(err)
@@ -35,15 +35,15 @@ sender
 
 **Usage example**
 ```javascript
-let sender = new FCM("serverKey");
+let sender = new FCM('serverKey');
 let message = {
 	to: registrationDeviceId,
 	data: {}
 }
 sender.send(message)
       .then(function (response) {
-        console.log("Request succeeded with status ", response.statusCode);
-        console.log("The response is : " , response.body);
+        console.log('Request succeeded with status ', response.statusCode);
+        console.log('The response is : ' , response.body);
       })
       .catch(function (err) {
     	  console.log(err)
