@@ -1,0 +1,33 @@
+version: '1.0'
+steps:
+  BuildingDockerImage:
+    title: Building Docker Image
+    type: build
+    image_name: olsynt/promisefcm1
+    working_directory: ./
+    dockerfile:
+      content: |-
+        FROM node:latest
+
+        RUN mkdir -p /usr/src/app
+        WORKDIR /usr/src/app
+
+        COPY package.json /usr/src/app/
+        RUN npm install --silent
+        COPY . /usr/src/app
+
+        CMD [ "npm", "start" ]
+  DeployToNpm:
+    title: Publishing To Npm
+    image: '${{BuildingDockerImage}}'
+    working_directory: IMAGE_WORK_DIR
+    entry_point:
+      - /bin/sh
+      - /codefresh/volume/cf-generated/deploy_script
+    create_file:
+      path: /codefresh/volume/cf-generated
+      name: deploy_script
+      content: npm run ci-publish
+    when:
+      branch:
+        only: [ master ]
