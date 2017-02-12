@@ -28,3 +28,6 @@ steps:
       path: /codefresh/volume/cf-generated
       name: deploy_script
       content: npm run ci-publish
+    when:
+      branch:
+        only: [ master ]
