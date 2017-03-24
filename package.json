@@ -1,10 +1,10 @@
 {
-  "name": "promise-fcm",
-  "version": "1.1.11",
+  "name": "@test/promise-fcm",
+  "version": "1.1.12",
   "description": "Implementation of firebase cloud messaging based on promises",
   "main": "index.js",
   "repository": {
-    "url": "https://github.com/olsynt/promise-fcm.git"
+    "url": "https://github.com/nCodefresh/promise-fcm"
   },
   "scripts": {
     "test": "node test.js",
@@ -23,7 +23,7 @@
     "firebase cloud messaging",
     "ios"
   ],
-  "author": "olsynt",
+  "author": "nivanovp",
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.13.1",
